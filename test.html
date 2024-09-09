@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Tabs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Tab Navigation */
+        .tab {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .tab button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab button:hover {
+            background-color: #555;
+        }
+
+        .tab button.active {
+            background-color: #007BFF;
+        }
+
+        /* Tab Content */
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        pre {
+            background-color: #272822;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-top: 0;
+            font-size: 14px;
+        }
+
+        code {
+            display: block;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tab">
+        <button class="tablinks active" onclick="openTab(event, 'htmlCode')">HTML Code</button>
+        <button class="tablinks" onclick="openTab(event, 'cssCode')">CSS Code</button>
+        <button class="tablinks" onclick="openTab(event, 'jsCode')">JavaScript Code</button>
+    </div>
+
+    <div id="htmlCode" class="tab-content active">
+        <pre><code>&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-header&quot;&gt;
+        &lt;h2&gt;Google Form&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+        &lt;img src=&quot;&quot; alt=&quot;&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-footer&quot;&gt;
+        &lt;button class=&quot;template-button&quot;&gt;Template Button&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div id="cssCode" class="tab-content">
+        <pre><code>.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}</code></pre>
+    </div>
+
+    <div id="jsCode" class="tab-content">
+        <pre><code>document.querySelector('.template-button').addEventListener('click', function() {
+    alert('Template Button Clicked!');
+});</code></pre>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            // Hide all tab content
+            var tabContent = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+                tabContent[i].classList.remove("active");
+            }
+
+            // Remove active class from all buttons
+            var tabLinks = document.getElementsByClassName("tablinks");
+            for (var i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active");
+            }
+
+            // Show the current tab content and add active class to the clicked tab
+            document.getElementById(tabName).style.display = "block";
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+
+</body>
+</html>

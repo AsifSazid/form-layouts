@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f3f2ef;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .input-container {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 20px 12px 10px 12px; /* Increased padding for height */
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      outline: none;
+      transition: border-color 0.3s ease, padding-top 0.3s ease;
+      background: none;
+    }
+
+    label {
+      position: absolute;
+      top: 50%; /* Center the label vertically */
+      left: 12px;
+      transform: translateY(-50%); /* Adjust label vertically */
+      background-color: white;
+      color: #999;
+      font-size: 16px;
+      padding: 0 5px;
+      pointer-events: none;
+      transition: 0.3s ease;
+    }
+
+    input:focus + label,
+    input:not(:placeholder-shown) + label {
+      top: 5px;
+      left: 9px;
+      font-size: 12px;
+      color: #0077b5; /* LinkedIn Blue */
+      transform: none; /* Remove transform when label moves up */
+    }
+
+    input:focus {
+      border-color: #0077b5; /* LinkedIn Blue */
+    }
+
+    button {
+      width: 100%;
+      background-color: #0077b5;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #005580;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <form>
+    <div class="input-container">
+      <input type="text" id="email" name="email" placeholder=" " required>
+      <label for="email">Email or phone</label>
+    </div>
+
+    <div class="input-container">
+      <input type="password" id="password" name="password" placeholder=" " required>
+      <label for="password">Password</label>
+    </div>
+
+    <button type="submit">Sign in</button>
+  </form>
+</div>
+
+</body>
+</html>

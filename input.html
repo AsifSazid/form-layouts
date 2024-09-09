@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Card Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .template-button {
+            background-color: #0b3a9e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .template-button:hover {
+            background-color: #45a049;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .row .col-4 {
+            width: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            .row .col-4 {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .row .col-4 {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">Welcome to the Template Button Page</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <a href="./google_forms/index.html">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Google Form</h2>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://via.placeholder.com/300x150" alt="Google Form Image">
+                    </div>
+                    <div class="card-footer">
+                        <button class="template-button"><a href="./google_forms/index.html">Template Button</a></button>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Survey Template</h2>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://via.placeholder.com/300x150" alt="Survey Template Image">
+                    </div>
+                    <div class="card-footer">
+                        <button class="template-button"><a href="">Template Button</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Feedback Form</h2>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://via.placeholder.com/300x150" alt="Feedback Form Image">
+                    </div>
+                    <div class="card-footer">
+                        <button class="template-button"><a href="">Template Button</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Contact Form</h2>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://via.placeholder.com/300x150" alt="Contact Form Image">
+                    </div>
+                    <div class="card-footer">
+                        <button class="template-button"><a href="">Template Button</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
