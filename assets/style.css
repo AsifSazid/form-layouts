@@ -1,138 +1,8 @@
-@font-face {
-    font-family: 'Rocket Sans';
-    src: url('./lang/rocketSans/RocketSans-Bold.eot');
-    src: local('Rocket Sans Bold'), local('RocketSans-Bold'),
-        url('./lang/rocketSans/RocketSans-Bold.eot?#iefix') format('embedded-opentype'),
-        url('./lang/rocketSans/RocketSans-Bold.woff2') format('woff2'),
-        url('./lang/rocketSans/RocketSans-Bold.woff') format('woff'),
-        url('./lang/rocketSans/RocketSans-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rocket Sans';
-    src: url('./lang/rocketSans/RocketSans-Italic.eot');
-    src: local('Rocket Sans Italic'), local('RocketSans-Italic'),
-        url('./lang/rocketSans/RocketSans-Italic.eot?#iefix') format('embedded-opentype'),
-        url('./lang/rocketSans/RocketSans-Italic.woff2') format('woff2'),
-        url('./lang/rocketSans/RocketSans-Italic.woff') format('woff'),
-        url('./lang/rocketSans/RocketSans-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rocket Sans';
-    src: url('./lang/rocketSans/RocketSans-BoldItalic.eot');
-    src: local('Rocket Sans Bold Italic'), local('RocketSans-BoldItalic'),
-        url('./lang/rocketSans/RocketSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('./lang/rocketSans/RocketSans-BoldItalic.woff2') format('woff2'),
-        url('./lang/rocketSans/RocketSans-BoldItalic.woff') format('woff'),
-        url('./lang/rocketSans/RocketSans-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rocket Sans';
-    src: url('./lang/rocketSans/RocketSans.eot');
-    src: local('Rocket Sans'), local('RocketSans'),
-        url('./lang/rocketSans/RocketSans.eot?#iefix') format('embedded-opentype'),
-        url('./lang/rocketSans/RocketSans.woff2') format('woff2'),
-        url('./lang/rocketSans/RocketSans.woff') format('woff'),
-        url('./lang/rocketSans/RocketSans.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rocket Sans';
-    src: url('./lang/rocketSans/RocketSansLight.eot');
-    src: local('Rocket Sans Light'), local('RocketSansLight'),
-        url('./lang/rocketSans/RocketSansLight.eot?#iefix') format('embedded-opentype'),
-        url('./lang/rocketSans/RocketSansLight.woff2') format('woff2'),
-        url('./lang/rocketSans/RocketSansLight.woff') format('woff'),
-        url('./lang/rocketSans/RocketSansLight.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rocket Sans';
-    src: url('./lang/rocketSans/RocketSansLight-Italic.eot');
-    src: local('Rocket Sans Light Italic'), local('RocketSansLight-Italic'),
-        url('./lang/rocketSans/RocketSansLight-Italic.eot?#iefix') format('embedded-opentype'),
-        url('./lang/rocketSans/RocketSansLight-Italic.woff2') format('woff2'),
-        url('./lang/rocketSans/RocketSansLight-Italic.woff') format('woff'),
-        url('./lang/rocketSans/RocketSansLight-Italic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rocket Sans';
-    src: url('./lang/rocketSans/RocketSansHeavy-Italic.eot');
-    src: local('Rocket Sans Heavy Italic'), local('RocketSansHeavy-Italic'),
-        url('./lang/rocketSans/RocketSansHeavy-Italic.eot?#iefix') format('embedded-opentype'),
-        url('./lang/rocketSans/RocketSansHeavy-Italic.woff2') format('woff2'),
-        url('./lang/rocketSans/RocketSansHeavy-Italic.woff') format('woff'),
-        url('./lang/rocketSans/RocketSansHeavy-Italic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rocket Sans';
-    src: url('./lang/rocketSans/RocketSansHeavy.eot');
-    src: local('Rocket Sans Heavy'), local('RocketSansHeavy'),
-        url('./lang/rocketSans/RocketSansHeavy.eot?#iefix') format('embedded-opentype'),
-        url('./lang/rocketSans/RocketSansHeavy.woff2') format('woff2'),
-        url('./lang/rocketSans/RocketSansHeavy.woff') format('woff'),
-        url('./lang/rocketSans/RocketSansHeavy.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rocket Sans';
-    src: url('./lang/rocketSans/RocketSansMedium-Italic.eot');
-    src: local('Rocket Sans Medium Italic'), local('RocketSansMedium-Italic'),
-        url('./lang/rocketSans/RocketSansMedium-Italic.eot?#iefix') format('embedded-opentype'),
-        url('./lang/rocketSans/RocketSansMedium-Italic.woff2') format('woff2'),
-        url('./lang/rocketSans/RocketSansMedium-Italic.woff') format('woff'),
-        url('./lang/rocketSans/RocketSansMedium-Italic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rocket Sans';
-    src: url('./lang/rocketSans/RocketSansMedium.eot');
-    src: local('Rocket Sans Medium'), local('RocketSansMedium'),
-        url('./lang/rocketSans/RocketSansMedium.eot?#iefix') format('embedded-opentype'),
-        url('./lang/rocketSans/RocketSansMedium.woff2') format('woff2'),
-        url('./lang/rocketSans/RocketSansMedium.woff') format('woff'),
-        url('./lang/rocketSans/RocketSansMedium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
 a{
     text-decoration: none;
 }
 
-button a{
+button > a{
     color: #fff;
 }
 
@@ -240,5 +110,5 @@ code {
 }
 
 .view-code-button:hover {
-    background-color: #0056b3; /* Darker green on hover */
+    background-color: #0056b3; 
 }

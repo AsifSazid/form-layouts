@@ -5,8 +5,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In Form</title>
-    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href=".../assets/assets/style.css">
     <style>
+        @font-face {
+            font-family: 'Rocket Sans';
+            src: url('../assets/lang/rocketSans/RocketSans-Bold.eot');
+            src: local('Rocket Sans Bold'), local('RocketSans-Bold'),
+                url('../assets/lang/rocketSans/RocketSans-Bold.eot?#iefix') format('embedded-opentype'),
+                url('../assets/lang/rocketSans/RocketSans-Bold.woff2') format('woff2'),
+                url('../assets/lang/rocketSans/RocketSans-Bold.woff') format('woff'),
+                url('../assets/lang/rocketSans/RocketSans-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Rocket Sans';
+            src: url('../assets/lang/rocketSans/RocketSans-Italic.eot');
+            src: local('Rocket Sans Italic'), local('RocketSans-Italic'),
+                url('../assets/lang/rocketSans/RocketSans-Italic.eot?#iefix') format('embedded-opentype'),
+                url('../assets/lang/rocketSans/RocketSans-Italic.woff2') format('woff2'),
+                url('../assets/lang/rocketSans/RocketSans-Italic.woff') format('woff'),
+                url('../assets/lang/rocketSans/RocketSans-Italic.ttf') format('truetype');
+            font-weight: normal;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Rocket Sans';
+            src: url('../assets/lang/rocketSans/RocketSans-BoldItalic.eot');
+            src: local('Rocket Sans Bold Italic'), local('RocketSans-BoldItalic'),
+                url('../assets/lang/rocketSans/RocketSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+                url('../assets/lang/rocketSans/RocketSans-BoldItalic.woff2') format('woff2'),
+                url('../assets/lang/rocketSans/RocketSans-BoldItalic.woff') format('woff'),
+                url('../assets/lang/rocketSans/RocketSans-BoldItalic.ttf') format('truetype');
+            font-weight: bold;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Rocket Sans';
+            src: url('../assets/lang/rocketSans/RocketSans.eot');
+            src: local('Rocket Sans'), local('RocketSans'),
+                url('../assets/lang/rocketSans/RocketSans.eot?#iefix') format('embedded-opentype'),
+                url('../assets/lang/rocketSans/RocketSans.woff2') format('woff2'),
+                url('../assets/lang/rocketSans/RocketSans.woff') format('woff'),
+                url('../assets/lang/rocketSans/RocketSans.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Rocket Sans';
+            src: url('../assets/lang/rocketSans/RocketSansLight.eot');
+            src: local('Rocket Sans Light'), local('RocketSansLight'),
+                url('../assets/lang/rocketSans/RocketSansLight.eot?#iefix') format('embedded-opentype'),
+                url('../assets/lang/rocketSans/RocketSansLight.woff2') format('woff2'),
+                url('../assets/lang/rocketSans/RocketSansLight.woff') format('woff'),
+                url('../assets/lang/rocketSans/RocketSansLight.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Rocket Sans';
+            src: url('../assets/lang/rocketSans/RocketSansLight-Italic.eot');
+            src: local('Rocket Sans Light Italic'), local('RocketSansLight-Italic'),
+                url('../assets/lang/rocketSans/RocketSansLight-Italic.eot?#iefix') format('embedded-opentype'),
+                url('../assets/lang/rocketSans/RocketSansLight-Italic.woff2') format('woff2'),
+                url('../assets/lang/rocketSans/RocketSansLight-Italic.woff') format('woff'),
+                url('../assets/lang/rocketSans/RocketSansLight-Italic.ttf') format('truetype');
+            font-weight: 300;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Rocket Sans';
+            src: url('../assets/lang/rocketSans/RocketSansHeavy-Italic.eot');
+            src: local('Rocket Sans Heavy Italic'), local('RocketSansHeavy-Italic'),
+                url('../assets/lang/rocketSans/RocketSansHeavy-Italic.eot?#iefix') format('embedded-opentype'),
+                url('../assets/lang/rocketSans/RocketSansHeavy-Italic.woff2') format('woff2'),
+                url('../assets/lang/rocketSans/RocketSansHeavy-Italic.woff') format('woff'),
+                url('../assets/lang/rocketSans/RocketSansHeavy-Italic.ttf') format('truetype');
+            font-weight: 900;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Rocket Sans';
+            src: url('../assets/lang/rocketSans/RocketSansHeavy.eot');
+            src: local('Rocket Sans Heavy'), local('RocketSansHeavy'),
+                url('../assets/lang/rocketSans/RocketSansHeavy.eot?#iefix') format('embedded-opentype'),
+                url('../assets/lang/rocketSans/RocketSansHeavy.woff2') format('woff2'),
+                url('../assets/lang/rocketSans/RocketSansHeavy.woff') format('woff'),
+                url('../assets/lang/rocketSans/RocketSansHeavy.ttf') format('truetype');
+            font-weight: 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Rocket Sans';
+            src: url('../assets/lang/rocketSans/RocketSansMedium-Italic.eot');
+            src: local('Rocket Sans Medium Italic'), local('RocketSansMedium-Italic'),
+                url('../assets/lang/rocketSans/RocketSansMedium-Italic.eot?#iefix') format('embedded-opentype'),
+                url('../assets/lang/rocketSans/RocketSansMedium-Italic.woff2') format('woff2'),
+                url('../assets/lang/rocketSans/RocketSansMedium-Italic.woff') format('woff'),
+                url('../assets/lang/rocketSans/RocketSansMedium-Italic.ttf') format('truetype');
+            font-weight: 500;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Rocket Sans';
+            src: url('../assets/lang/rocketSans/RocketSansMedium.eot');
+            src: local('Rocket Sans Medium'), local('RocketSansMedium'),
+                url('../assets/lang/rocketSans/RocketSansMedium.eot?#iefix') format('embedded-opentype'),
+                url('../assets/lang/rocketSans/RocketSansMedium.woff2') format('woff2'),
+                url('../assets/lang/rocketSans/RocketSansMedium.woff') format('woff'),
+                url('../assets/lang/rocketSans/RocketSansMedium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
         * {
             font-family: 'Rocket Sans';
         }
@@ -182,7 +312,7 @@
         </div>
     </div>
 
-    <button class="view-code-button"><a href="./get-code-v2.html">View Code</a></button>
+    <button class="view-code-button"><a href="../assets/get-code-v2.html">View Code</a></button>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template Card Layout</title>
+    <link rel="stylesheet" href="assets/style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -40,12 +41,7 @@
         }
 
         .template-button:hover {
-            background-color: #45a049;
-        }
-
-        a{
-            text-decoration: none;
-            color: white;
+            background-color: #0056b3;
         }
 
         .row {
@@ -56,8 +52,9 @@
         }
 
         .row .col-4 {
-            width: 1 1 calc(33.333% - 20px);
+            flex: 1 1 calc(33.333% - 20px);
             box-sizing: border-box;
+            max-width: calc(33.333% - 20px);
         }
 
         @media (max-width: 768px) {
@@ -94,43 +91,49 @@
                 </a>
             </div>
             <div class="col-4">
+                <a href="./linked_in_forms/index.html">
                 <div class="card">
                     <div class="card-header">
-                        <h2>Survey Template</h2>
+                        <h2>LinkedIN Form</h2>
                     </div>
                     <div class="card-body">
-                        <img src="https://via.placeholder.com/300x150" alt="Survey Template Image">
+                        <img src="https://via.placeholder.com/300x150" alt="Google Form Image">
                     </div>
                     <div class="card-footer">
-                        <button class="template-button"><a href="">Template Button</a></button>
+                        <button class="template-button"><a href="./linked_in_forms/index.html">Template Button</a></button>
                     </div>
                 </div>
+                </a>
             </div>
             <div class="col-4">
+                <a href="./google_forms/index.html">
                 <div class="card">
                     <div class="card-header">
-                        <h2>Feedback Form</h2>
+                        <h2>Form with Colorful UI & Validation V1</h2>
                     </div>
                     <div class="card-body">
-                        <img src="https://via.placeholder.com/300x150" alt="Feedback Form Image">
+                        <img src="https://via.placeholder.com/300x150" alt="Google Form Image">
                     </div>
                     <div class="card-footer">
-                        <button class="template-button"><a href="">Template Button</a></button>
+                        <button class="template-button"><a href="./google_forms/index.html">Template Button</a></button>
                     </div>
                 </div>
+                </a>
             </div>
             <div class="col-4">
+                <a href="./google_forms/index.html">
                 <div class="card">
                     <div class="card-header">
-                        <h2>Contact Form</h2>
+                        <h2>Form with Colorful UI & Validation V2</h2>
                     </div>
                     <div class="card-body">
-                        <img src="https://via.placeholder.com/300x150" alt="Contact Form Image">
+                        <img src="https://via.placeholder.com/300x150" alt="Google Form Image">
                     </div>
                     <div class="card-footer">
-                        <button class="template-button"><a href="">Template Button</a></button>
+                        <button class="template-button"><a href="./google_forms/index.html">Template Button</a></button>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
     </div>
